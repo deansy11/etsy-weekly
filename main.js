@@ -29,29 +29,43 @@ function question2 () {
   console.log(itemArray);
 }
 
-
-
 // 3: Which item has a "GBP" currency code? Display it's name and price.
 function question3 () {
-  // Answer:
+  let currencyCode = "";
+  for(let i = 0; i < data.length; i++) {
+    if(data[i].currency_code === "GBP") {
+      currencyCode += (data[i].title + " costs " + data[i].price + ".");
+    }
+ } console.log(currencyCode);
 }
 
 
 // 4: Display a list of all items who are made of wood.
 function question4 () {
-  // Answer:
+  let woodItems = [];
+  for(let i = 0; i < data.length; i++) {
+  if(data[i].materials.includes("wood")) {
+    woodItems += (data[i].title + " is made of wood." + "\n");
+  }
+  }
+  console.log(woodItems);
 }
 
 
 // 5: Which items are made of eight or more materials?
 //    Display the name, number of items and the items it is made of.
 function question5 () {
-  // Answer:
+  let materialsList = [];
+
 }
 
 
 // 6: How many items were made by their sellers?
 // Answer:
 function question6 () {
-  // Answer:
+  let sellersIdentified = [];
+  let sellersNumbers = 0;
+
+
+  console.log(sellersNumbers + " items were made by their sellers.");
 }
