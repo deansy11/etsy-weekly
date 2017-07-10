@@ -13,29 +13,20 @@ function question1 () {
   for(let i = 0; i < data.length; i++) {
       priceTotal += data[i].price;
     }
-    priceAverage += priceTotal / data.length
+    priceAverage += (priceTotal / data.length).toFixed(2);
     console.log("The average price is $" + priceAverage);
 
   }
-  // Answer:
-
-
-// function averagePrice() {
-//   let price = 0;
-//   for(let i = 0; i < data.length; i++) {
-//     if(data.price) {
-//       price.push(data.price) ;
-//       price = data.price / data.price.length;
-//     }
-//     console.log("The average price is $" + price);
-//   }
-// }
-
-
 
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
 function question2 () {
-  // Answer:
+  let itemArray = "";
+  for( let i = 0; i < data.length; i++) {
+    if(data[i].price >= 14.00 && data[i].price <= 18.00) {
+      itemArray += data[i].title + "\n";
+    }
+  }
+  console.log(itemArray);
 }
 
 
