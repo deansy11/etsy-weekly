@@ -1025,14 +1025,3 @@ const data = [{
   "has_variations": false,
   "used_manufacturer": false
 }];
-
-function averagePrice() {
-  let price = 0;
-  for(let i = 0; i < data.length; i++) {
-    if(data.price) {
-      price.push(data.price) ;
-      price = data.price / data.price.length;
-    }
-    console.log("The average price is $" + price);
-  }
-}
