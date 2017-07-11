@@ -13,7 +13,7 @@ function question1 () {
   for(let i = 0; i < data.length; i++) {
       priceTotal += data[i].price;
     }
-    priceAverage += (priceTotal / data.length).toFixed(2);
+    priceAverage = (priceTotal/data.length).toFixed(2);
     console.log("The average price is $" + priceAverage);
 
   }
